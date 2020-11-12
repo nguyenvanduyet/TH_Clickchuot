@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>di chuyen bong</title>
+</head>
+<body>
+<form>
+    <img id="myImage" src="qua-bong-da-thi-dau-chat-luong.jpg" style="width: 200px"/>
+    <p>Click button brlow to move the imge to right</p>
+    <input type="button" value="Clich Me" onclick="moveRight()"/>
+</form>
+<script>
+    let imgOnj = null;
+    imgOnj=document.getElementById('myImage');
+    function init(){
+        imgOnj=document.getElementById('myImage');
+        imgOnj.style.position='relative';
+        imgOnj.style.left='0px';
+    }
+    function moveRight(){
+        imgOnj.style.left=parseInt(imgOnj.style.left) + 10 + 'px';
+    }
+         window.onload=init;
+
+
+
+</script>
+</body>
+</html>
